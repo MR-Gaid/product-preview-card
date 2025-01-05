@@ -7,7 +7,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -29,7 +28,7 @@ Users should be able to:
 ![](./screenshot/Capture.JPG)
 
 ## My process
-This is completed product preview card component challenge, with responsive design teqnices and best practies.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -44,4 +43,5 @@ Through this challenge, I enhanced my understanding of using relative units (e.g
 ### Continued development
 
 I plan to deepen my knowledge of these methods to better utilize relative units and logical properties in building flexible and adaptable layouts across different devices.
+
 

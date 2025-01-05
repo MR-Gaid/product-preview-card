@@ -1,145 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
+    font-family: "Montserrat", "Fraunces", sans-serif;
     font-size: 14px;
-    font-family: 'Montserrat, Fraunces' sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #f2ebe3;
-    /* margin: 0 auto; */
 }
 
-*, *::before, *:after {
-    box-sizing: border-box;
-}
-
-h2, h5, p {
-    margin: 0;
-}
-
-/* Card container */
-#card-container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    background-color: #ffffff;
+.card-container {
+    width: 90%;
     overflow: hidden;
-    box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.2);
-    margin: 50px auto;
+    background-color: #fff;
+    margin: 5em auto;
+    border-radius: 0.5rem;
+    max-width: 25em;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    container-type: inline-size;
 }
-
-/* Top section */
-#top-section {
-    width: 100%;
-    overflow: hidden;
-    background-image: url("./images/image-product-mobile.jpg");
+/* top section start */
+.top-section {
+    background-image: url(./images/image-product-mobile.jpg);
     background-size: cover;
     background-position: center;
-    height: 250px;
+    height: 220px;
+}
+/* top section end */
+/* bottom section start */
+
+.bottom-section {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
 
-
-/* #perfum-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-} */
-
-/* bottom section */
-#bottom-section {
-    padding: 20px;
-    height: 100%;
-}
-
-#bottom-section h5 {
+#pic-name {
+    font-family: "Montserrat";
+    font-size: 0.6rem;
     color: #6c7289;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 0.7rem;
-    font-family: Montserrat;
-    font-weight: 700;
-    opacity: 75%;
+    letter-spacing: 0.3em;
+    margin-block-end: 0.9em;
 }
 
-#bottom-section h2 {
-    color: #1c232b;
-    font-family: Fraunces;
-    font-size: 1.8rem;
-    text-transform: capitalize;
-    font-weight: 700;
+#perfume-name {
+    font-family: "Fraunces";
+    margin-block-end: 0.4em;
 }
 
-#bottom-section h2, h5 {
-    margin-bottom: 10px;
-}
-
-#bottom-section p {
-    margin-bottom: 20px;
+#description {
+    font-size: 0.8rem;
     color: #6c7289;
-    font-family: Fraunces;
-    font-size: 0.9rem;
-    opacity: 75%;
+    margin-block-end: 1.5em;
 }
 
-/* price-container */
-#price-container {
+.price-container {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-block-end: 0.7em;
 }
 
-#price-container #new-price {
+#new-price {
     font-size: 2rem;
     color: #3c8067;
-    font-family: Fraunces;
+    font-family: "Fraunces";
     font-weight: 700;
 }
 
-#price-container #old-price {
-    margin-left: 20px;
+#old-price {
     font-size: 0.9rem;
+    font-family: "Fraunces";
+    /* font-weight: 700; */
     color: #6c7289;
-    font-family: Fraunces;
     text-decoration: line-through;
-    opacity: 75%;
+    margin-inline-start: 1.3em;
 }
 
-/* buttom-container */
-#buttom-container {
+.buttom-container {
     display: flex;
+    background-color: #3c8067;
+    padding: 1em ;
     justify-content: center;
-    align-content: center;
-    background-color: #3c8067;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 5px;
-
-    
+    border-radius: 0.5em;
 }
 
-#buttom-container button {
-    background-color: #3c8067;
+button {
     border: none;
-    color: #ffffff;
-    font-family: Montserrat;
+    background-color: transparent;
+    color: #fff;
+    margin-inline-start: 1em;
     font-weight: 700;
-    margin-left: 5px;
 }
 
+@container (min-width: 500px) {
+    .card-container {
+        display: flex;
+    }
+}
 
-
-/* Media query for desktop (1440px) */
 @media (min-width:768px) {
-    #card-container {
-        max-width: 500px;
-        height: 400px;
-        flex-direction: row;
+    .card-container {
+        display: flex;
+        max-width: 33.25em;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    #top-section {
+    .top-section {
         background-image: url(./images/image-product-desktop.jpg);
         background-size: cover;
         background-position: center;
@@ -147,8 +121,8 @@ h2, h5, p {
         flex-basis: 50%;
     }
 
-    #bottom-section {
-        flex-basis: 50%;
+    .bottom-section {
+        flex-basis: 48%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
